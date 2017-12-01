@@ -1,0 +1,16 @@
+{
+  "name": "outlook-api-play",
+  "version": "1.0.0",
+  "description": "outlook api test",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "me",
+  "license": "ISC",
+  "dependencies": {
+    "@microsoft/microsoft-graph-client": "^1.0.0",
+    "es6-promise": "^4.1.1",
+    "simple-oauth2": "^1.4.0"
+  }
+}
