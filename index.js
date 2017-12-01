@@ -50,7 +50,7 @@ function getUserEmail(token, callback) {
 
 function tokenReceived(response, error, token) {
   if (error) {
-    console.log('Access token error: ', error.message);
+    console.log('tokenReceived error: ', error);
     response.writeHead(200, {'Content-Type': 'text/html'});
     response.write('<p>ERROR: ' + error + '</p>');
     response.end();

@@ -37,7 +37,7 @@ function getTokenFromCode(auth_code, callback, response) {
     scope: scopes.join(' ')
   }, function (error, result) {
     if (error) {
-      console.log('Access token error: ', error.message);
+      console.log('getTokenFromCode error: ', error);
       callback(response, error, null);
     } else {
       token = oauth2.accessToken.create(result);
